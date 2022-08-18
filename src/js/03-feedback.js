@@ -47,5 +47,4 @@ const onFormSubmit = e => {
   localStorage.removeItem(STORAGE_KEY);
   form.reset();
 };
-
 formRef.addEventListener('submit', onFormSubmit);
