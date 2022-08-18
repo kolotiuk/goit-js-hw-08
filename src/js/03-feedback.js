@@ -26,8 +26,8 @@ const rehydrateData = () => {
     return;
   }
 
-  formRef.elements.email.value = parsedData.email;
-  formRef.elements.message.value = parsedData.message;
+  formRef.elements.email.value = parsedData.email || '';
+  formRef.elements.message.value = parsedData.message || '';
 };
 
 rehydrateData();
